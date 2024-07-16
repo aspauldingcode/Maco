@@ -15,6 +15,7 @@ Maco is currently in very early stages of development. The project aims to creat
 - Can set duration notification is displayed for in ms
 - Can set Application Name mapped from bundle identifiers
 - Can set window width, height, margin, and padding from config file
+- Can set border radius from config file
 
 Please note that this project is highly experimental and subject to significant changes.
 
@@ -29,7 +30,6 @@ Please note that this project is highly experimental and subject to significant 
 - Create a notification preview feature for styling
 - Develop more extensive rules file for app name mapping
 - Enhance configuration options:
-  - Set border radius
   - Set font family
   - Set font color
   - Set font size
