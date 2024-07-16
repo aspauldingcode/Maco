@@ -11,6 +11,7 @@ Maco is currently in very early stages of development. The project aims to creat
 - Displays notifications in a simple GUI window
 - Can read configuration from Maco's config file `~/.config/maco/config`
 - Can set border color from config file
+- Can set background color from config file
 - Can set duration notification is displayed for in ms
 - Can set Application Name mapped from bundle identifiers
 
@@ -27,7 +28,6 @@ Please note that this project is highly experimental and subject to significant 
 - Create a notification preview feature for styling
 - Develop more extensive rules file for app name mapping
 - Enhance configuration options:
-  - Set background color
   - Set border radius
   - Set font family
   - Set font color
