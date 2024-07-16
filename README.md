@@ -1,22 +1,51 @@
 # Maco
 ## Mako (wayland notif daemon), but for Mac.
 
-### how to use:
-currently, it does not behave like it will.
-we are (I am) in early stages, where we generate a csv of the macOS notification database, then we can view it in terminal.
+### MAJOR WORK IN PROGRESS
 
-That is the extent so far.. A prettified terminal output of your notifications.
+Maco is currently in very early stages of development. The project aims to create a notification daemon for macOS inspired by Mako (the Wayland notification daemon).
 
-## Liscense: FOSS
-BSD3.
+### Current Status:
+- Basic GUI functionality implemented using tkinter
+- Can generate a CSV of the macOS notification database
+- Displays notifications in a simple GUI window
+- Can read configuration from Maco's config file `~/.config/maco/config`
+- Can set border color from config file
+- Can set duration notification is displayed for in ms
+- Can set Application Name mapped from bundle identifiers
 
-Plans:
-- Mako's config ideology: Configure Maco notif style with 1:1 manpages of Mako config
-- GUI for Maco: actually SHOW the notifications on the screen (Somehow with multi-screen support) (outside of cli)
-- Interactive: allow user to click on Notification for actions
-- Man pages: Include documentation for configuring Maco or invoking the command.
-- Daemon: You know, the actual part that always runs in the background.
-- Hotkey changes: Read config and update live.
-- Notifications: Actually show new notifications for n seconds (automatically determine changes in notif database)
-- Invoke Maco Notifications: Preview an example notification for the user to style it properly like Mako does
-- Rules file: For app bundle identifiers to display the app name instead of identifier ("com.example.appnameexample" would be mappable to App Name)
+Please note that this project is highly experimental and subject to significant changes.
+
+### Future Plans:
+- Implement Mako-style configuration
+- Improve multi-screen support
+- Add interactive features (e.g., clicking on notifications for actions)
+- Create man pages for documentation
+- Develop a background daemon for continuous operation
+- Implement live config updates via hotkeys
+- Add real-time notification display
+- Create a notification preview feature for styling
+- Develop more extensive rules file for app name mapping
+- Enhance configuration options:
+  - Set background color
+  - Set border radius
+  - Set font family
+  - Set font color
+  - Set font size
+  - Set notification icon/photo
+  - Set notification opacity
+  - Set notification location (which corner)
+  - Set notification output display (which monitor)
+- Implement notification grouping and stacking
+- Add support for notification urgency levels
+- Implement notification history and recall
+- Add support for notification sounds
+- Develop a CLI tool for sending test notifications
+- Implement notification filtering and Do Not Disturb mode
+- Add support for rich text and HTML content in notifications
+- Implement notification actions (e.g., reply to messages, snooze reminders)
+- Add support for notification replacement and updates
+- Develop a plugin system for extending functionality?
+
+## License
+MIT License
