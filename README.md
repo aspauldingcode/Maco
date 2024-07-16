@@ -14,6 +14,7 @@ Maco is currently in very early stages of development. The project aims to creat
 - Can set background color from config file
 - Can set duration notification is displayed for in ms
 - Can set Application Name mapped from bundle identifiers
+- Can set window width, height, margin, and padding from config file
 
 Please note that this project is highly experimental and subject to significant changes.
 
