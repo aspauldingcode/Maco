@@ -25,6 +25,6 @@ pkgs.mkShell {
     echo "Python packages available: pandas, termcolor, biplist, textwrap3, tkinter, psutil"
     echo "SQLite is also available in the PATH"
     echo "To run the project, use the following command:"
-    echo "  python src/maco/mac_notifications_gui.py"
+    echo "  python src/maco/mac_notifications_server.py"
   '';
 }

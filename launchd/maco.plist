@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>org.freedesktop.Notifications</string>
+    <string>com.aspauldingcode.Notifications</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/maco</string>
