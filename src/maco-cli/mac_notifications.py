@@ -185,6 +185,8 @@ try:
     if os.path.exists(inputPath):
         ProcessNotificationDb(inputPath, outputPath)
     else:
-        print("Error: Failed to find file at specified path. Path was : " + inputPath)
+        print(f"Error: Failed to find file at specified path. Path was: {inputPath}")
+        print("Please make sure you have the necessary permissions to access the Notification Center database.")
+        print("You may need to grant Full Disk Access to your terminal application in System Preferences > Security & Privacy > Privacy.")
 except Exception as ex:
-    print("Error: Unknown exception, error details are: " + ex.args)
+    print(f"Error: Unknown exception, error details are: {str(ex)}")

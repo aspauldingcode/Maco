@@ -4,6 +4,7 @@ pkgs.mkShell {
   buildInputs = with pkgs; [
     python311
     python311Packages.pandas
+    python311Packages.pyarrow
     python311Packages.termcolor
     python311Packages.biplist
     python311Packages.textwrap3
@@ -14,6 +15,7 @@ pkgs.mkShell {
 
   shellHook = ''
     export PYTHONPATH="${pkgs.python311Packages.pandas}/lib/python3.11/site-packages:$PYTHONPATH"
+    export PYTHONPATH="${pkgs.python311Packages.pyarrow}/lib/python3.11/site-packages:$PYTHONPATH"
     export PYTHONPATH="${pkgs.python311Packages.termcolor}/lib/python3.11/site-packages:$PYTHONPATH"
     export PYTHONPATH="${pkgs.python311Packages.biplist}/lib/python3.11/site-packages:$PYTHONPATH"
     export PYTHONPATH="${pkgs.python311Packages.textwrap3}/lib/python3.11/site-packages:$PYTHONPATH"
@@ -22,9 +24,9 @@ pkgs.mkShell {
     export PATH="${pkgs.sqlite}/bin:$PATH"
     
     echo "Maco development environment loaded"
-    echo "Python packages available: pandas, termcolor, biplist, textwrap3, tkinter, psutil"
+    echo "Python packages available: pandas, pyarrow, termcolor, biplist, textwrap3, tkinter, psutil"
     echo "SQLite is also available in the PATH"
     echo "To run the project, use the following command:"
-    echo "  python src/maco/mac_notifications_server.py"
+    echo "  python src/maco/maco.py"
   '';
 }

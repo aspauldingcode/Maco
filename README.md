@@ -2,25 +2,31 @@
 ## Mako (wayland notif daemon), but for Mac.
 
 ### MAJOR WORK IN PROGRESS
-
 Maco is currently in very early stages of development. The project aims to create a notification daemon for macOS inspired by Mako (the Wayland notification daemon).
 
 ### Current Status:
 - Basic GUI functionality implemented using tkinter
-- Can generate a CSV of the macOS notification database
-- Displays notifications in a simple GUI window
-- Can read configuration from Maco's config file `~/.config/maco/config`
-- Can set border color from config file
-- Can set background color from config file
-- Can set duration notification is displayed for in ms
-- Can set Application Name mapped from bundle identifiers
-- Can set window width, height, margin, and padding from config file
-- Can set border radius from config file
+- Generates CSV of macOS notification database
+- Displays notifications in GUI window
+- Reads configuration from `~/.config/maco/config`
+- Configurable settings from config file:
+  - Appearance:
+    - Border color and radius
+    - Background color
+    - Font family, size, and color
+  - Layout:
+    - Window dimensions (width, height)
+    - Margin and padding
+  - Behavior:
+    - Notification display duration in ms
+    - Anchor (top-left, top-right, bottom-left, bottom-right, center-left, center-right, center)
+- Maps application names from bundle identifiers in `app_id_list.json`
+- Supports blacklist from separate file
+- Implements configuration compatible with Mako
 
 Please note that this project is highly experimental and subject to significant changes.
 
 ### Future Plans:
-- Implement Mako-style configuration
 - Improve multi-screen support
 - Add interactive features (e.g., clicking on notifications for actions)
 - Create man pages for documentation
@@ -30,12 +36,8 @@ Please note that this project is highly experimental and subject to significant 
 - Create a notification preview feature for styling
 - Develop more extensive rules file for app name mapping
 - Enhance configuration options:
-  - Set font family
-  - Set font color
-  - Set font size
   - Set notification icon/photo
   - Set notification opacity
-  - Set notification location (which corner)
   - Set notification output display (which monitor)
 - Implement notification grouping and stacking
 - Add support for notification urgency levels
@@ -47,6 +49,7 @@ Please note that this project is highly experimental and subject to significant 
 - Implement notification actions (e.g., reply to messages, snooze reminders)
 - Add support for notification replacement and updates
 - Develop a plugin system for extending functionality?
+- Package python application into binary
 
 ## License
 MIT License
