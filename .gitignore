@@ -44,10 +44,6 @@ venv/
 env/
 ENV/
 
-# Project-specific
-Maco/
-output/
-
 # Compiled files
 *.com
 *.class
@@ -70,3 +66,8 @@ output/
 .Trashes
 ehthumbs.db
 Thumbs.db
+# Ignore run_in_background_for_testing.sh
+run_in_background_for_testing.sh
+
+# Allow src/maco/ to be included in the git project
+!src/maco/
